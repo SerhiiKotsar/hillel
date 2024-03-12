@@ -49,7 +49,7 @@ usd_per_uah = 38.32
 eur_per_uah = 42.46
 
 # user_uah_amount = int(input('Write here how much uah do you have: '))
-user_currency_choice= input('\nChoose currency for exchange: write like one of these USD or EUR: ')
+user_currency_choice = input('\nChoose currency for exchange: write like one of these USD or EUR: ')
 
 if user_currency_choice == 'USD':
     user_usd_amount = float(input('Write here how much USD do you want to get: '))
