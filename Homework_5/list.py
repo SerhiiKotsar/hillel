@@ -1,13 +1,7 @@
 # 1. Написати програму, яка перевіряє чи є стрінга паліндромом
-palindrome_string_original = input('Write your string here, please: ')  # 'tenet' is a palindrome
-palindrome_string_copy = palindrome_string_original[::-1]  # reverse our string
-
-result = palindrome_string_original == palindrome_string_copy
-
-if result:
-    print(f'String \'{palindrome_string_original}\' is a palindrome')
-else:
-    print(f'String \'{palindrome_string_original}\' is not a palindrome')
+actual_string = input('Write your string here, please: ')  # 'tenet' is a palindrome
+# actual_string[::-1] => reverse string
+print(f'Is \'{actual_string}\' a palindrome? {actual_string == actual_string[::-1]}')
 
 # 2. Ви маєте список ['Hillel', 'AQA', 'TEST'], переведіть цей список в стрінгу, а потім знову в список
 hillel_list = ['Hillel', 'AQA', 'TEST']  # original list of words
