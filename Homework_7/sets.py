@@ -8,9 +8,7 @@ second = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13].
 first_list = [1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89]
 second_list = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]
 
-first_set = set(first_list)
-second_set = set(second_list)
-uniq_set = first_set.union(second_set)
+uniq_set = set(first_list).intersection(set(second_list))
 uniq_list = list(uniq_set)
 print(f'Unique list looks like: {uniq_list}\n')
 
