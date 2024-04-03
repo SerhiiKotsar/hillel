@@ -7,7 +7,7 @@ roles = { 'admin' : [...], 'maintainer' : [...], 'manager' : [...], 'developer':
 """
 
 roles = {'admin': ['Sergey', 'Ethan'], 'manager': ['Anna', 'Helen'], 'developer': ['Sasha', 'Den']}
-user_name = input('Print your name here: ')
+user_name = input('Print your name here: ').title()
 
 for role, name in roles.items():
     if user_name in name:
@@ -49,10 +49,8 @@ result_link = 'https://www.youtube.com/watch?v=some_id&list=some_list&index=6&t=
 char_count = {}
 
 for char in result_link:
-    if char in char_count:
-        char_count[char] += 1
-    else:
-        char_count[char] = 1
+    if char not in char_count:
+        char_count[char] = result_link.count(char)
 
 for char, count in char_count.items():
     print(f'Symbol "{char}" meets {count} time(s) in string: {result_link}')
