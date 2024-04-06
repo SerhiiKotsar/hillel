@@ -8,6 +8,8 @@ course = {'title': 'AQA', 'language': 'Python', 'level': 'PRO', 'frame': 'pytest
 user_key = input('Write a key from a dictionary: ').lower()
 
 try:
-    print(f'The value key \'{user_key}\' is: {course[user_key]}')
+    result = course[user_key]
 except KeyError:
     print(f'There is no key \'{user_key}\' in a dictionary')
+else:
+    print(f'The value key \'{user_key}\' is: {course[user_key]}')
