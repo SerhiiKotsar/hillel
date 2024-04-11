@@ -7,13 +7,13 @@ P.S просте число це те, що ділиться без залишк
 '''
 
 
-def is_prime(number):
-    if (number < 2) or (number > 1000):
-        return False
+def is_prime(*, number: int) -> bool:
+    if number not in range(2, 1001):
+        raise ValueError(f'{number} is not a valid number. Please, try any number in range from 2 to 1000.')
     for element in range(2, int(number ** 0.5) + 1):
         if number % element == 0:
             return False
     return True
 
 
-print(is_prime(number=21))
+print(is_prime(number=3))

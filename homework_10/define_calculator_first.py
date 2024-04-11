@@ -1,17 +1,17 @@
 # 1. Перепишіть наш калькулятор (який ми робили  в іншій домашці) за допомогою функцій.
-def add_numbers(num_1, num_2):
+def add_numbers(*, num_1: float, num_2: float) -> float:
     return num_1 + num_2
 
 
-def subtract_numbers(num_1, num_2):
+def subtract_numbers(*, num_1: float, num_2: float) -> float:
     return num_1 - num_2
 
 
-def multiply_numbers(num_1, num_2):
+def multiply_numbers(*, num_1: float, num_2: float) -> float:
     return num_1 * num_2
 
 
-def divide_numbers(num_1, num_2):
+def divide_numbers(*, num_1: float, num_2: float) -> float:
     return num_1 / num_2
 
 
