@@ -20,8 +20,3 @@ def convert_temperature(*, temp_value: int, unit: str) -> str:
         return f'{temp_value} fahrenheit is equal {result_celsius} celsius'
     else:
         raise ValueError(f'\'{unit}\' is not a valid unit. You should choose one of these \'C\' or \'F\'')
-
-
-number_value = int(input('Enter temperature value: '))
-unit_value = input('Select unit of measurement (C/F): ')
-print(convert_temperature(temp_value=number_value, unit=unit_value))
